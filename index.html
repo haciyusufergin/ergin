@@ -1,131 +1,49 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ergin | Yazılımcı, Tasarımcı ve Girişimci</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ERGiN</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #f5f5f5;
-      color: #222;
+      height: 100vh;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      overflow: hidden;
     }
 
-    header {
-      background-color: #1f2937;
-      color: #fff;
-      padding: 2rem 1rem;
-      text-align: center;
+    h1 {
+      font-size: 10vw;
+      color: white;
+      text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+      background: linear-gradient(45deg, #ff416c, #ff4b2b, #ff6a00);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: fadeIn 2s ease-in-out;
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      margin-top: 0.5rem;
-    }
-
-    nav {
-      background: #111827;
-      text-align: center;
-    }
-
-    nav a {
-      display: inline-block;
-      padding: 1rem;
-      color: #d1d5db;
-      text-decoration: none;
-    }
-
-    nav a:hover {
-      background: #374151;
-      color: #fff;
-    }
-
-    section {
-      padding: 2rem 1rem;
-      max-width: 800px;
-      margin: auto;
-    }
-
-    section h2 {
-      font-size: 1.8rem;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 0.5rem;
-      margin-bottom: 1rem;
-    }
-
-    footer {
-      background-color: #1f2937;
-      color: #d1d5db;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
+    @keyframes fadeIn {
+      from {
+        transform: translateY(-20px);
+        opacity: 0;
       }
-
-      nav a {
-        padding: 0.8rem;
-        font-size: 0.9rem;
-      }
-
-      section {
-        padding: 1.5rem 1rem;
+      to {
+        transform: translateY(0);
+        opacity: 1;
       }
     }
   </style>
 </head>
 <body>
-
-  <header>
-    <h1>Ergin</h1>
-    <p>Yazılımcı | Tasarımcı | Girişimci</p>
-  </header>
-
-  <nav>
-    <a href="#hakkimda">Hakkımda</a>
-    <a href="#projeler">Projeler</a>
-    <a href="#iletisim">İletişim</a>
-  </nav>
-
-  <section id="hakkimda">
-    <h2>Hakkımda</h2>
-    <p>Merhaba! Ben Ergin. Yazılım geliştirmeye, kullanıcı deneyimine ve yaratıcı çözümler üretmeye tutkuyla bağlı bir yazılımcıyım. Web teknolojileri, yapay zeka ve mobil uygulama geliştirme konularında projeler geliştiriyorum.</p>
-    <p>5 yıldır yazılım dünyasındayım. React, Python, Node.js ve UI/UX tasarımı konularında uzmanlaştım. Boş zamanlarımda açık kaynak projelere katkı sağlıyor ve mentor olarak genç geliştiricilere destek oluyorum.</p>
-  </section>
-
-  <section id="projeler">
-    <h2>Projeler</h2>
-    <ul>
-      <li><strong>CodeConnect:</strong> Geliştiricilerin birbirine yardım ettiği sosyal platform.</li>
-      <li><strong>ErginGPT:</strong> Türkçe doğal dil işleme yeteneklerine sahip sohbet robotu.</li>
-      <li><strong>GörselZihin:</strong> Öğrenciler için zihin haritalama aracı.</li>
-      <li><strong>ReactifyShop:</strong> Modern e-ticaret teması (React + TailwindCSS).</li>
-    </ul>
-  </section>
-
-  <section id="iletisim">
-    <h2>İletişim</h2>
-    <p>Benimle iletişime geçmek isterseniz:</p>
-    <ul>
-      <li>Email: ergin@example.com</li>
-      <li>GitHub: <a href="https://github.com/ergin" target="_blank">github.com/ergin</a></li>
-      <li>LinkedIn: <a href="https://linkedin.com/in/ergin" target="_blank">linkedin.com/in/ergin</a></li>
-    </ul>
-  </section>
-
-  <footer>
-    <p>© 2025 Ergin. Tüm hakları saklıdır.</p>
-  </footer>
-
+  <h1>ERGiN</h1>
 </body>
 </html>
